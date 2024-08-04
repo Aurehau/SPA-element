@@ -1,0 +1,8 @@
+<svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="niche">
+    <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+    <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+    <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+    <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+    </g>
+</svg>

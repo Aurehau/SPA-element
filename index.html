@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nvp2seg.css">
+    <title>SPA_acceuil</title>
+</head>
+<body>
+    <header>
+        <a class="logoSite" href=""><img src="images/logoVersion2.svg" alt="logo_spa" /></a>
+        <div class="boutonMenu">
+            <a href="#">Adopter</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Nos Refuges</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Nos Articles</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Tu préfère</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Favorie</a>
+            <img class="Mcoeur" src="images/coeur.svg" alt="icone_coeur"/>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Comment Aider ?</a>
+            <div class="souligne"></div>
+        </div>
+        <img class="icone_profil" src="images/profil.svg" alt="icone_profil"/>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="option_connexion">
+            <div class="option1"><a href="">Se connecter</a></div>
+            <div></div>
+            <div class="option2"><a href="">Créer un compte</a></div>
+        </div>
+
+        <nav class="nav_cacher nav_plus">
+            <div class="boutonMenu">
+                <a href="#">Adopter</a>
+                <div class="souligne souligne_noir"></div>
+            </div>
+            <div class="boutonMenu">
+                <a href="#">Nos Refuges</a>
+                <div class="souligne souligne_noir"></div>
+            </div>
+            <div class="boutonMenu">
+                <a href="#">Nos Articles</a>
+                <div class="souligne souligne_noir"></div>
+            </div>
+            <div class="boutonMenu">
+                <a href="#">Tu préfère</a>
+                <div class="souligne souligne_noir"></div>
+            </div>
+            <div class="boutonMenu">
+                <a href="#">Favorie</a>
+                <img class="Mcoeur" src="images/coeur.svg" alt="icone_coeur"/>
+                <div class="souligne souligne_noir"></div>
+            </div>
+            <div class="boutonMenu">
+                <a href="#">Comment Aider ?</a>
+                <div class="souligne souligne_noir"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="img_menu">
+            <a class="B_rencontre" href="#">Tu préfères</a>
+            <img src="images/chiens_home.jpg" alt="chien qui joue">
+            <div class="dBas"></div>
+        </div>
+        <H1>Trouve l'animal qui te convient !</H1>
+
+        <div class="card_animal_menu">
+            <ul class="carousel-items">
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg et de ses morts</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card">
+                        <div class="info_animal">
+                            <div class="photo"></div>
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <a href="#" class="boutton_card">
+                                <img src="images/patte.svg" alt="patte">
+                            </a>
+                            <a  href="#"class="boutton_card">
+                                <img src="images/coeur-vide.svg" alt="coeur vide">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                <a  href="#"  class="carousel-item">
+                    <div class="card" data-post-id="1">
+                        <div class="info_animal">
+                            <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                            <div class="info">
+                                <div class="texte">
+                                    <div class="nom">Lila</div>
+                                    <div class="refuge">Refuge SPA de Cabourg</div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="bouttons">
+                            <button class="boutton_card selection" data-action="ajout">
+                                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="path-1-inside-1_121_104" fill="white">
+                                        <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                    </mask>
+    
+                                    <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                    
+                                    <mask id="path-2-inside-2_121_104" fill="white">
+                                        <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                    </mask>
+    
+                                    <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                    
+                                    <mask id="path-3-inside-3_121_104" fill="white">
+                                        <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                    </mask>
+    
+                                    <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                    
+                                    <mask id="path-4-inside-4_121_104" fill="white">
+                                        <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                    </mask>
+                                    
+                                    <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                    
+                                    <mask id="path-5-inside-5_121_104" fill="white">
+                                        <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                    </mask>
+    
+                                    <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                                </svg>        
+                            </button>
+                            <button class="boutton_card selection" data-action="like">
+                                <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="path-1-inside-1_121_97" fill="white">
+                                        <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                    </mask>
+                                    <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </ul>            
+        </div>
+
+
+
+        <H1>Trouve l'animal qui te convient !</H1>
+
+        <div class="card_animal_grid">
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg defgrgd gfgt g grjjj</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a>  
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <a href="#" class="boutton_card">
+                            <img src="images/patte.svg" alt="patte">
+                        </a>
+                        <a  href="#"class="boutton_card">
+                            <img src="images/coeur-vide.svg" alt="coeur vide">
+                        </a>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <div class="photo"></div>
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card selection" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card selection" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+            <a href="#"  class="group_card">
+                <div class="card" data-post-id="1">
+                    <div class="info_animal">
+                        <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">Lila</div>
+                                <div class="refuge">Refuge SPA de Cabourg</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bouttons">
+                        <button class="boutton_card" data-action="ajout">
+                            <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_104" fill="white">
+                                    <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                                </mask>
+
+                                <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                                
+                                <mask id="path-2-inside-2_121_104" fill="white">
+                                    <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                                
+                                <mask id="path-3-inside-3_121_104" fill="white">
+                                    <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                                
+                                <mask id="path-4-inside-4_121_104" fill="white">
+                                    <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                                </mask>
+                                
+                                <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                                
+                                <mask id="path-5-inside-5_121_104" fill="white">
+                                    <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                                </mask>
+
+                                <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                            </svg>        
+                        </button>
+                        <button class="boutton_card" data-action="like">
+                            <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_121_97" fill="white">
+                                    <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                                </mask>
+                                <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </a> 
+        </div>
+
+        
+
+        <div class="partie_Refuge">
+            <div class="box_map">
+                <img class="Bzoom" src="images/maximize-2.svg" alt="agrandir carte">
+                <img src="images/minimize-2.svg" alt="réduire carte">
+                <div id="map"></div>
+            </div>
+
+            <div>
+                <div class="recherche">
+                    <input id="searchbar" onkeyup="search_animal()" type="text"
+                    name="search" placeholder="Chercher un refuge...">
+                    <div class="box_loupe">
+                        <img src="images/search.svg" alt="loupe">
+                    </div>
+                </div>
+                <div class="affichage_refuges">
+                    <div class="degrader dHaut"></div>
+                    <div class="degrader dBas"></div>
+                    <ul class="refuges ">
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge</div>
+                                <div class="lieu_Refuge">lieu du refuge</div>
+                            </div>
+                        </a>
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge qui est super long</div>
+                                <div class="lieu_Refuge">lieu du refuge <br>chien</div>
+                            </div>
+                        </a>
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge</div>
+                                <div class="lieu_Refuge">lieu du refuge</div>
+                            </div>
+                        </a>
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge</div>
+                                <div class="lieu_Refuge">lieu du refuge</div>
+                            </div>
+                        </a>
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge</div>
+                                <div class="lieu_Refuge">lieu du refuge</div>
+                            </div>
+                        </a>
+                        <a href="#" class="Bouton_refuge">
+                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="niche">
+                                <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                                <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                                <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                                <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                                </g>
+                            </svg>
+                            <div class="info_refuge">
+                                <div class="nom_Refuge"> Nom du refuge</div>
+                                <div class="lieu_Refuge">lieu du refuge</div>
+                            </div>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card_article">
+            <div class="type_article">Réseaux</div>
+            <img src="" alt="">
+            <div class="info_article">
+                <div class="date_article">09.12.2022</div>
+                <div class="titre_article">Le titre de l’article qui peut être plus ou moins long</div>
+            </div>
+        </div>
+
+
+        <div class="dédié">
+            <div class="card_dédié">
+                <div class="bouttons">
+                    <button class="boutton_card selection" data-action="ajout">
+                        <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_121_104" fill="white">
+                                <path d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z"/>
+                            </mask>
+
+                            <path class="grand_svg" d="M12.0754 21.2937L12.8859 20.4832L13.6964 21.2937C15.6467 23.2441 18.807 23.2441 20.7544 21.2937L20.7777 21.2704C22.699 19.3492 22.7369 16.2414 20.8506 14.2852C19.5241 12.9091 17.8362 11.4398 15.9441 9.91799C14.1628 8.48364 11.6148 8.4953 9.84226 9.93548C7.91521 11.501 6.20389 12.9995 4.86866 14.3814C3.02325 16.288 3.04074 19.32 4.91531 21.1946C4.94738 21.2266 4.97945 21.2587 5.01152 21.2908C6.96189 23.2412 10.1221 23.2412 12.0696 21.2908L12.0754 21.2937Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-1-inside-1_121_104)"/>
+                            
+                            <mask id="path-2-inside-2_121_104" fill="white">
+                                <path d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z"/>
+                            </mask>
+
+                            <path class="doigt_patte" d="M5.19808 7.91509C6.06103 9.99957 5.79865 12.1161 4.50132 12.6904C3.20398 13.2648 1.41396 12.0549 0.498536 9.99374C-0.416885 7.93259 -0.00582013 5.97347 1.1953 5.21839C2.43141 4.43999 4.13107 5.34667 5.19808 7.91509Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-2-inside-2_121_104)"/>
+                            
+                            <mask id="path-3-inside-3_121_104" fill="white">
+                                <path d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z"/>
+                            </mask>
+
+                            <path class="doigt_patte" d="M12.7867 3.93275C12.8975 6.18632 11.9384 8.09296 10.5215 8.195C9.10757 8.29703 7.82773 6.55657 7.66156 4.30592C7.4983 2.05526 8.54199 0.3527 9.92679 0.0436723C11.3524 -0.274101 12.6468 1.15442 12.7867 3.93275Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-3-inside-3_121_104)"/>
+                            
+                            <mask id="path-4-inside-4_121_104" fill="white">
+                                <path d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z"/>
+                            </mask>
+                            
+                            <path class="doigt_patte" d="M21.8652 8.78099C20.6232 10.6643 20.4833 12.7954 21.6494 13.603C22.8156 14.4105 24.8009 13.5622 26.0866 11.708C27.3723 9.85383 27.3402 7.85682 26.3023 6.88601C25.2353 5.88896 23.3928 6.45745 21.8652 8.78099Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-4-inside-4_121_104)"/>
+                            
+                            <mask id="path-5-inside-5_121_104" fill="white">
+                                <path d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z"/>
+                            </mask>
+
+                            <path class="doigt_patte" d="M15.7517 3.62663C15.0345 5.7665 15.4426 7.85973 16.7779 8.34368C18.1131 8.82763 19.8157 7.49822 20.5824 5.37585C21.3491 3.25347 20.8069 1.33225 19.5562 0.658808C18.2705 -0.0321309 16.635 0.991156 15.7517 3.62663Z" stroke="#3B3A40" stroke-width="2.4" mask="url(#path-5-inside-5_121_104)"/>
+                        </svg>        
+                    </button>
+                    <button class="boutton_card selection" data-action="like">
+                        <svg width="28" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_121_97" fill="white">
+                                <path d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z"/>
+                            </mask>
+                            <path class="grand_svg" d="M13.2203 2.21574L14.4799 3.44501L15.7394 2.21574C18.7643 -0.736443 23.6679 -0.736443 26.6911 2.21574L26.7273 2.251C29.7029 5.1551 29.7702 9.86064 26.8488 12.8176C23.7533 15.9509 19.3998 19.4015 14.5948 22.9627C14.5275 23.0124 14.4322 23.0124 14.3649 22.9627C9.5993 19.3711 5.28529 15.9173 2.2062 12.8433C-0.759584 9.88147 -0.731668 5.14388 2.2686 2.21414C5.2935 -0.738045 10.1971 -0.738045 13.2203 2.21414V2.21574Z" stroke="#EC4747" stroke-width="2.4" mask="url(#path-1-inside-1_121_97)"/>
+                        </svg>
+                    </button>
+                </div>
+                <img src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                <div class="nom_dédié">Charles</div>
+                <div class="info_droit">
+                    <div class="titre_catégorie">Espèce</div>
+                    <div class="caractéristique">Chien</div>
+                    <div class="titre_catégorie">Race</div>
+                    <div class="caractéristique">Chiuahua</div>
+                </div>
+                <div class="info_icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" viewBox="0 0 26 29" fill="none">
+                        <path d="M13 -1.14441e-05L13.866 3.74999H12.134L13 -1.14441e-05Z" fill="#FDD900"/>
+                        <path d="M13 5.25L13.866 3.74999H12.134L13 5.25Z" fill="#F29F05"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5.25H12V11.25H2C0.895431 11.25 0 12.1454 0 13.25V16.25C0 17.3546 0.89543 18.25 2 18.25L2 28.25H24V18.25C25.1046 18.25 26 17.3546 26 16.25V13.25C26 12.1454 25.1046 11.25 24 11.25H14V5.25ZM24 13.25H2L2 16.25H24V13.25ZM4 18.25H22V26.25H4V18.25Z" fill="#FDD900"/>
+                    </svg>
+                    <div>23 - 01 - 2020</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.80753C14.6623 9.54935 14.4433 13.4562 11.9497 15.9498C9.21608 18.6834 4.78392 18.6834 2.05025 15.9498C-0.683418 13.2161 -0.683417 8.78393 2.05025 6.05026C4.54385 3.55666 8.45072 3.33768 11.1925 5.39331L14.1655 2.42038L12.4626 2.07826C11.9211 1.96947 11.5704 1.44234 11.6792 0.900876C11.788 0.359412 12.3151 0.00865579 12.8566 0.117441L16.3894 0.827226C16.7846 0.90662 17.0934 1.21549 17.1728 1.61066L17.8826 5.14352C17.9914 5.68498 17.6407 6.21211 17.0992 6.3209C16.5577 6.42969 16.0306 6.07893 15.9218 5.53746L15.5797 3.8346L12.6068 6.80753ZM3.46447 7.46448C5.41709 5.51186 8.58291 5.51186 10.5355 7.46448C12.4882 9.4171 12.4882 12.5829 10.5355 14.5355C8.58291 16.4882 5.41709 16.4882 3.46447 14.5355C1.51184 12.5829 1.51184 9.4171 3.46447 7.46448Z" fill="#FDD900"/>
+                    </svg>
+                    <div>Femelle</div>
+                </div>
+                <div class="physique">
+                    <div class="titre_catégorie">Caractéristique physique</div>
+                    <div class="plusieur_caract">
+                        <div class="caractéristique">grand</div>
+                        <div class="caractéristique">stérile</div>
+                        <div class="caractéristique">noir | blanc</div>
+                    </div>
+                </div>
+                <div class="compatibilite">
+                    <div class="titre_catégorie">Compatible</div>
+                    <div class="plusieur_caract">
+                        <div class="caractéristique">enfant</div>
+                        <div class="caractéristique">congénère femelle</div>
+                    </div>
+                    <div class="titre_catégorie">Incompatible</div>
+                    <div class="plusieur_caract">
+                        <div class="caractéristique">chat</div>
+                        <div class="caractéristique">congénère mal</div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="titre_catégorie">Description</div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Sodales bibendum blandit sit tincidunt maecenas donec. Vitae consectetur nullam odio in fringilla feugiat elementum tempor aenean. Turpis at purus malesuada non sodales. Adipiscing morbi phasellus neque elementum.</p>
+                </div>
+                <div class="au_refuge">
+                    <a href="#" class="Bouton_refuge">
+                        <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="niche">
+                            <path id="Rectangle 33" d="M6 13C6 10.2386 8.23858 8.00002 11 8.00002H23C25.7614 8.00002 28 10.2386 28 13V28C28 29.6569 26.6569 31 25 31H9C7.34315 31 6 29.6569 6 28V13Z" fill="white"/>
+                            <rect id="Rectangle 30" y="15.1435" width="23" height="6" rx="3" transform="rotate(-41.179 0 15.1435)" fill="#EC4747"/>
+                            <rect id="Rectangle 31" width="23" height="6" rx="3" transform="matrix(0.752656 0.658414 0.658414 -0.752656 13 4.51595)" fill="#EC4747"/>
+                            <path id="Rectangle 35" d="M13 25C13 22.7909 14.7909 21 17 21C19.2091 21 21 22.7909 21 25V31H13V25Z" fill="#9D4B00"/>
+                            </g>
+                        </svg>
+                        <div class="info_refuge">
+                            <div class="nom_Refuge"> Nom du refuge qui est long long long</div>
+                            <div class="lieu_Refuge">lieu du refuge</div>
+                        </div>
+                    </a>
+                    <p>Au refuge depuis le 03 - 07 - 2023</p>
+                </div>
+            </div>
+
+            <div class="card_dédié">
+                <ul class="carousel_img">
+                    <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                    <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                    <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                    <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                    <img class="photo" src="images/img_animaux/chientest.png" alt="photo de profil de l'animal">
+                </ul>
+            </div>
+
+            <div class="boutton_centré">
+                <a class="B_rencontre" href="#">Rencontrer nom</a>
+            </div>
+        </div>
+
+
+        <div class="erreur">Erreur : il y a une erreur !</div>
+
+
+        <div class="retour_titre">
+            <a class="B_retour" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1667 14.4999C24.1667 15.1673 23.6258 15.7083 22.9584 15.7083L6.04175 15.7083C5.3744 15.7083 4.83341 15.1673 4.83341 14.4999C4.83341 13.8326 5.3744 13.2916 6.04175 13.2916L22.9584 13.2916C23.6258 13.2916 24.1667 13.8326 24.1667 14.4999Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3543 23.8128C14.8825 24.2847 14.1174 24.2847 13.6455 23.8128L5.18717 15.3545C4.71528 14.8826 4.71528 14.1175 5.18717 13.6457L13.6455 5.18733C14.1174 4.71544 14.8825 4.71544 15.3543 5.18733C15.8262 5.65921 15.8262 6.42428 15.3543 6.89617L7.75043 14.5001L15.3543 22.104C15.8262 22.5759 15.8262 23.341 15.3543 23.8128Z" fill="white"/>
+                </svg>
+                <span>Retour</span>
+            </a>
+            <h2>Le titre en question</h2>
+        </div>
+
+
+        <div class="bouton_filtre"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 6.41667C9.16675 5.91041 9.57715 5.5 10.0834 5.5H18.3334C18.8397 5.5 19.2501 5.91041 19.2501 6.41667C19.2501 6.92293 18.8397 7.33333 18.3334 7.33333H10.0834C9.57715 7.33333 9.16675 6.92293 9.16675 6.41667Z" fill="#3B3A40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.66675 15.5834C3.66675 15.0772 4.07715 14.6667 4.58341 14.6667H12.8334C13.3397 14.6667 13.7501 15.0772 13.7501 15.5834C13.7501 16.0897 13.3397 16.5001 12.8334 16.5001H4.58341C4.07715 16.5001 3.66675 16.0897 3.66675 15.5834Z" fill="#3B3A40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5834 13.7501C14.5709 13.7501 13.7501 14.5709 13.7501 15.5834C13.7501 16.5959 14.5709 17.4167 15.5834 17.4167C16.5959 17.4167 17.4167 16.5959 17.4167 15.5834C17.4167 14.5709 16.5959 13.7501 15.5834 13.7501ZM11.9167 15.5834C11.9167 13.5584 13.5584 11.9167 15.5834 11.9167C17.6085 11.9167 19.2501 13.5584 19.2501 15.5834C19.2501 17.6085 17.6085 19.2501 15.5834 19.2501C13.5584 19.2501 11.9167 17.6085 11.9167 15.5834Z" fill="#3B3A40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41667 4.58333C5.40414 4.58333 4.58333 5.40414 4.58333 6.41667C4.58333 7.42919 5.40414 8.25 6.41667 8.25C7.42919 8.25 8.25 7.42919 8.25 6.41667C8.25 5.40414 7.42919 4.58333 6.41667 4.58333ZM2.75 6.41667C2.75 4.39162 4.39162 2.75 6.41667 2.75C8.44171 2.75 10.0833 4.39162 10.0833 6.41667C10.0833 8.44171 8.44171 10.0833 6.41667 10.0833C4.39162 10.0833 2.75 8.44171 2.75 6.41667Z" fill="#3B3A40"/>
+            </svg>
+            <span>Filtres</span>
+        </div>
+        <div class="espace_filtre visibleF"></div>
+        <form class="card_dédié card_filtre">
+            <div class="part1">
+
+                <label for="espece-select">Espèce :</label>
+
+                <select name="espece" id="espece-select">
+                    <option value="toutes">toutes</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="lapin">Lapin</option>
+                    <option value="cheval">Cheval</option>
+                    <option value="mouton">Mouton</option>
+                </select>
+
+                <label for="sexe-select">Sexe :</label>
+
+                <select name="sexe" id="sexe-select">
+                    <option value="tous">tous</option>
+                    <option value="male">Mâle</option>
+                    <option value="femelle">Femelle</option>
+                </select>
+
+                <label for="race-select">Race :</label>
+
+                <select name="race" id="race-select">
+                    <option value="toutes">toutes</option>
+                    <option value="Labrador">Labrador</option>
+                    <option value="Bulldog_anglais">Bulldog anglais</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="Teckel">Teckel</option>
+                    <option value="Caniche">Caniche</option>
+                </select>
+
+                <label for="taille-select">Taille :</label>
+
+                <select name="taille" id="taille-select">
+                    <option value="toutes">toutes</option>
+                    <option value="petit">Petit</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="grand">Grand</option>
+                </select>
+
+                <label for="sterile-select">Stérile :</label>
+
+                <select name="sterile" id="sterile-select">
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                </select>
+            </div>
+            <div class="part2">
+                <div class="titre_catégorie">Compatible</div>
+                <div class="plusieur_caract">
+                    <input value="enfant" id="enfant" name="compatible" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="enfant">enfant</label>
+                    <input value="femelle" id="femelle" name="compatible" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="femelle">congénère femelle</label>
+                    <input value="male" id="male" name="compatible" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="male">congénère male</label>
+                    <input value="chat" id="chat" name="compatible" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="chat">chat</label>
+                    <input value="chien" id="chien" name="compatible" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="chien">chien</label>
+                </div>
+                <div class="titre_catégorie">Incompatible</div>
+                <div class="plusieur_caract">
+                    <input value="Nenfant" id="Nenfant" name="incompatible" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nenfant">enfant</label>
+                    <input value="Nfemelle" id="Nfemelle" name="incompatible" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nfemelle">congénère femelle</label>
+                    <input value="Nmale" id="Nmale" name="incompatible" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nmale">congénère male</label>
+                    <input value="Nchat" id="Nchat" name="incompatible" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nchat">chat</label>
+                    <input value="Nchien" id="Nchien" name="incompatible" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nchien">chien</label>
+                </div>
+            </div>
+            <input class="B_filtre" type="reset" value="Reset" />
+            <input class="styled B_filtre" type="button" value="Filtrer" />
+        </form>
+
+        <form class="card_dédié card_filtre ajoutAdmin" method="post"  enctype="multipart/form-data">
+            <div class="photo_profil"><!--photo de profil-->
+                <label class="ajout_photo_profil" for="avatar"></label>
+                <input  type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/jpg"/>
+            </div>
+            <div class="nom_date">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez le nom de l'animal" required minlength="1" maxlength="60" size="16" />
+
+                <label for="start">Date de naissance :</label>
+                <input type="date" id="start" name="dateNaissance" value="2024-01-23" />
+            </div>
+
+            <div class="part1">
+
+                <label for="espece-select">Espèce :</label>
+
+                <select name="espece" id="espece-select">
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="lapin">Lapin</option>
+                    <option value="cheval">Cheval</option>
+                    <option value="mouton">Mouton</option>
+                </select>
+
+                <label for="sexe-select">Sexe :</label>
+
+                <select name="sexe" id="sexe-select">
+                    <option value="1">Mâle</option>
+                    <option value="0">Femelle</option>
+                </select>
+
+                <label for="race-select">Race :</label>
+
+                <select name="race" id="race-select">
+                    <option value="labrador">Labrador</option>
+                    <option value="bulldog anglais">Bulldog anglais</option>
+                    <option value="chihuahua">Chihuahua</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="teckel">Teckel</option>
+                    <option value="caniche">Caniche</option>
+                </select>
+
+                <label for="taille-select">Taille :</label>
+
+                <select name="taille" id="taille-select">
+                    <option value="petit">Petit</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="grand">Grand</option>
+                </select>
+
+                <label for="sterile-select">Stérile :</label>
+
+                <select name="sterile" id="sterile-select">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                </select>
+            </div>
+
+            <div class="nouvel_description">
+                <label for="desc">Description :</label>
+                <textarea type="text" id="desc" name="desc" placeholder="Entrez la description de l'animal" required minlength="1" maxlength="500" size="40"> </textarea>
+            </div>
+
+
+            <div class="part2">
+                <div class="titre_catégorie">Compatible</div>
+                <div class="plusieur_caract">
+                    <input value="enfant" id="enfant" name="compatible[]" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="enfant">enfant</label>
+                    <input value="femelle" id="femelle" name="compatible[]" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="femelle">congénère femelle</label>
+                    <input value="male" id="male" name="compatible[]" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="male">congénère male</label>
+                    <input value="chat" id="chat" name="compatible[]" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="chat">chat</label>
+                    <input value="chien" id="chien" name="compatible[]" type="checkbox" onclick="verifierCompatibilite(this)">
+                    <label for="chien">chien</label>
+                </div>
+                <div class="titre_catégorie">Incompatible</div>
+                <div class="plusieur_caract">
+                    <input value="enfant" id="Nenfant" name="incompatible[]" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nenfant">enfant</label>
+                    <input value="femelle" id="Nfemelle" name="incompatible[]" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nfemelle">congénère femelle</label>
+                    <input value="male" id="Nmale" name="incompatible[]" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nmale">congénère male</label>
+                    <input value="chat" id="Nchat" name="incompatible[]" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nchat">chat</label>
+                    <input value="chien" id="Nchien" name="incompatible[]" type="checkbox" onclick="verifierInCompatibilite(this)">
+                    <label for="Nchien">chien</label>
+                </div>
+                <div class="titre_catégorie">Couleur</div>
+                <div class="plusieur_caract">
+                    <input value="noir" id="noir" name="couleur[]" type="checkbox">
+                    <label for="noir">noir</label>
+                    <input value="blanc" id="blanc" name="couleur[]" type="checkbox">
+                    <label for="blanc">blanc</label>
+                    <input value="brun" id="brun" name="couleur[]" type="checkbox">
+                    <label for="brun">brun</label>
+                    <input value="gris" id="gris" name="couleur[]" type="checkbox">
+                    <label for="gris">gris</label>
+                    <input value="roux" id="roux" name="couleur[]" type="checkbox">
+                    <label for="roux">roux</label>
+                </div>
+            </div>
+
+            <div class="arriver">
+                <label for="start">Date d’arrivé dans le refuge :</label>
+                <input type="date" id="start" name="arriveRefuge" value="2024-01-23" placeholder="la date" />
+            </div>
+
+            <div class="plus_de_photo">
+                <label for="file">Ajouter plus de photos</label>
+                <input type="file" id="file" name="file[]" accept="image/png, image/jpeg, image/jpg" multiple /><!--photos de présentation-->
+                <div></div>
+            </div>
+
+            <input class="boutton_connexion B_rencontre" type="submit" class="valid" name="ok" value="Créer">
+        </form>
+
+
+        <div class="card_dédié card_filtre visibleF Prefuges">
+            <div class="part1">
+                <h2>Nom refuge</h2>
+                <p>adresse</p>
+                <div class="contact">
+                    <p>Mail : auxhazard@gmail.com</p>
+                    <p>Tel : 06 25 60 84 86</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur. Tortor proin donec elementum ridiculus. Eget elit ac nulla ut tincidunt ut hendrerit adipiscing quisque. Duis nibh quam neque sed tortor aliquam pretium tempor. Odio porttitor faucibus dis nulla sociis egestas rutrum pellentesque.</p>
+            </div>
+            <div class="part2">
+                <h3>Horaire d'ouverture</h3>
+                <table>
+                <tr>
+                    <th></th>
+                    <th>8:00 - 11:30</th>
+                    <th>13:10 - 17:00</th>
+                </tr>
+                <tr>
+                    <td>Lundi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Mardi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Mercredi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Jeudi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Vendredi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Samedi</td>
+                    <td>ouvert</td>
+                    <td>ouvert</td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td class="ferme">fermé</td>
+                    <td class="ferme">fermé</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="retour_titre">
+            <a class="B_retour" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1667 14.4999C24.1667 15.1673 23.6258 15.7083 22.9584 15.7083L6.04175 15.7083C5.3744 15.7083 4.83341 15.1673 4.83341 14.4999C4.83341 13.8326 5.3744 13.2916 6.04175 13.2916L22.9584 13.2916C23.6258 13.2916 24.1667 13.8326 24.1667 14.4999Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3543 23.8128C14.8825 24.2847 14.1174 24.2847 13.6455 23.8128L5.18717 15.3545C4.71528 14.8826 4.71528 14.1175 5.18717 13.6457L13.6455 5.18733C14.1174 4.71544 14.8825 4.71544 15.3543 5.18733C15.8262 5.65921 15.8262 6.42428 15.3543 6.89617L7.75043 14.5001L15.3543 22.104C15.8262 22.5759 15.8262 23.341 15.3543 23.8128Z" fill="white"/>
+                </svg>
+                <span>Retour</span>
+            </a>
+            <h2>Comment nous aider ?</h2>
+        </div>
+
+        <h3 class="jaune">En faisant un don !</h3>
+        <div class="don"  style="--lien_img: url('../images/img_animaux/chientest.png');">
+            <h4>Pour recueillir des animaux, sensibiliser et lutter contre la maltraitance.</h4>
+            <div class="boutton_centré">
+                <a class="B_rencontre" href="#">Faire un don</a>
+            </div>
+        </div>
+        <div>
+            <p class="info_aide">Faire un don à la SPA est bien plus qu'une simple contribution financière ; c'est un acte concret qui soutient nos missions cruciales. En choisissant de faire un don, vous devenez un maillon essentiel dans la chaîne du sauvetage et du bien-être animal.<br><br>
+
+                Votre générosité permet de recueillir des animaux en détresse, de leur offrir un abri sécurisé, des soins médicaux appropriés et une chance réelle d'être adoptés dans des foyers aimants. Chaque don contribue à garantir que les animaux vulnérables reçoivent l'aide nécessaire pour reconstruire leur vie et connaître une seconde chance.<br><br>
+                
+                En faisant un don à la SPA, vous participez également à notre lutte contre la maltraitance animale. Les fonds que vous nous confiez soutiennent nos initiatives de sensibilisation, d'éducation du public et de plaidoyer en faveur des droits des animaux. Votre soutien financier est une force motrice pour créer une société où la compassion envers nos compagnons à quatre pattes est encouragée, et où nous travaillons ensemble à bâtir un avenir où chaque animal est traité avec respect et dignité.</p> 
+            <div class="voir" onclick="voir_plus(this)">
+                <div class="voir_plus">voir plus</div>
+                <div class="voir_plus suppression">voir moins</div>
+            </div>
+        </div>
+
+
+        <h3 class="jaune">En devenant bénévol !</h3>
+        <div class="don donGauche" style="--lien_img: url('../images/img_animaux/chientest.png');">
+            <h4>Aider à nourrir les animaux, promener les chiens, nettoyer les box ...</h4>
+            <div class="boutton_centré">
+                <a class="B_rencontre" href="#">Devenir bénévol</a>
+            </div>
+        </div>
+        <div>
+            <p class="info_aide">
+                La Société Protectrice des Animaux (SPA) offre de précieuses opportunités aux individus souhaitant s'engager en tant que bénévoles pour apporter leur soutien aux animaux en détresse. L'une des manières significatives de contribuer est d'apporter votre aide dans les tâches quotidiennes essentielles au bien-être des animaux hébergés. Vous pouvez participer activement en aidant à nourrir les animaux, veillant ainsi à ce qu'ils reçoivent une alimentation appropriée et équilibrée. De plus, promener les chiens est une activité enrichissante qui offre non seulement de l'exercice physique aux animaux, mais aussi une interaction sociale cruciale pour leur bien-être émotionnel. <br><br>
+
+                En tant que bénévole engagé auprès de la SPA, votre contribution ne se limite pas à ces activités de base. Nettoyer les box et les espaces d'hébergement est tout aussi crucial pour maintenir des conditions sanitaires optimales. Votre dévouement à assurer un environnement propre et sécurisé contribue directement au confort des animaux, favorisant ainsi leurs chances d'adoption. En résumé, en vous impliquant dans ces diverses tâches, vous jouez un rôle essentiel dans le quotidien des animaux secourus par la SPA, tout en apportant une contribution significative à la mission globale de protection et de bienveillance envers nos compagnons à quatre pattes.</p>
+                
+            <div class="voir" onclick="voir_plus(this)">
+                <div class="voir_plus">voir plus</div>
+                <div class="voir_plus suppression">voir moins</div>
+            </div>
+        </div>
+
+
+        <h3 class="jaune">En acceuillant des animaux !</h3>
+        <div class="don"  style="--lien_img: url('../images/img_animaux/chientest.png');">
+            <h4>Aider les chiens et les chats en échec d'adoption.</h4>
+            <div class="boutton_centré">
+                <a class="B_rencontre" href="#">Devenir famille d’acceuil</a>
+            </div>
+        </div>
+        <div>
+            <p class="info_aide">La Société Protectrice des Animaux (SPA) joue un rôle crucial dans le sauvetage et la réhabilitation des animaux en difficulté d'adoption. En ouvrant vos portes et en devenant une famille d'accueil pour les chiens et les chats, vous offrez un refuge temporaire à ces compagnons à quatre pattes en attente d'un foyer permanent. En tant que famille d'accueil, vous apportez non seulement le confort et l'affection nécessaires à ces animaux vulnérables, mais vous jouez également un rôle essentiel dans leur réadaptation sociale et émotionnelle. En offrant votre espace et votre amour, vous contribuez directement à accroître leurs chances de trouver une famille aimante et permanente. <br><br>
+
+                Accueillir des animaux à la SPA va au-delà de simplement fournir un toit temporaire. C'est un acte de générosité qui offre une seconde chance aux chiens et aux chats en échec d'adoption. En devenant famille d'accueil, vous participez activement à briser le cycle de l'abandon et de la solitude pour ces animaux. Votre engagement crée un environnement aimant et stable, facilitant leur transition vers un foyer permanent. Ainsi, en ouvrant votre maison à ces animaux, vous devenez un maillon crucial dans la chaîne du sauvetage animal, offrant une opportunité précieuse pour un nouveau départ et une vie pleine d'amour et de soins.</p>
+                
+            
+            <div class="voir" onclick="voir_plus(this)">
+                <div class="voir_plus">voir plus</div>
+                <div class="voir_plus suppression">voir moins</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="card_animal_grid duel">
+
+            <div class="card aanimal animation_card" style="--delay:0s;">
+                <a  href=""  class="group_card">
+                    <div class="info_animal">
+                    <img class="photo" src="" alt="">
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">rgggrg</div>
+                                <div class="refuge">gfbfbgggnn</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="bouttons">
+                    <a class="boutton_card" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18" fill="none">
+                            <path d="M2.5 15C13 -1.5 14 -1.5 24 15" stroke="#3B3A40" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="47" viewBox="0 0 97 47" fill="none">
+                <path d="M36.6245 5.05549C0.12471 -7.7351 -8.37545 43.3492 19.6245 43.3492C41.1245 43.3492 47.1245 27.8492 43.6245 14.3492C40.1245 0.8492 28.6245 3.00851 28.6245 12.3493C28.6245 20.8492 36.6245 26.3492 46.6245 26.3492C56.6245 26.3492 60.2983 20.8492 62.6246 7.84918C59.7913 23.6825 56.1246 43.3492 76.1246 43.3492C98.6246 43.3492 93.1246 16.3492 91.1246 7.84918" stroke="#FF0000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <div class="card aanimal animation_card" style="--delay:0.5s;">
+                <a  href=""  class="group_card">
+                    <div class="info_animal">
+                    <img class="photo" src="" alt="">
+                        <div class="info">
+                            <div class="texte">
+                                <div class="nom">rgggrg</div>
+                                <div class="refuge">gfbfbgggnn</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6068 6.7587C14.6623 9.50052 14.4433 13.4073 11.9497 15.9009C9.21608 18.6346 4.78392 18.6346 2.05025 15.9009C-0.683418 13.1673 -0.683417 8.73511 2.05025 6.00144C4.54385 3.50783 8.45072 3.28885 11.1925 5.34448L14.1655 2.37155L12.4626 2.02943C11.9211 1.92065 11.5704 1.39351 11.6792 0.852048C11.788 0.310584 12.3151 -0.0401723 12.8566 0.0686131L16.3894 0.778398C16.7846 0.857792 17.0934 1.16667 17.1728 1.56183L17.8826 5.09469C17.9914 5.63615 17.6407 6.16329 17.0992 6.27207C16.5577 6.38086 16.0306 6.0301 15.9218 5.48864L15.5797 3.78577L12.6068 6.7587ZM3.46447 7.41565C5.41709 5.46303 8.58291 5.46303 10.5355 7.41565C12.4882 9.36827 12.4882 12.5341 10.5355 14.4867C8.58291 16.4393 5.41709 16.4393 3.46447 14.4867C1.51184 12.5341 1.51184 9.36827 3.46447 7.41565Z" fill="#FDD900"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="bouttons">
+                    <a class="boutton_card" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18" fill="none">
+                            <path d="M2.5 15C13 -1.5 14 -1.5 24 15" stroke="#3B3A40" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="recherche">
+            <input id="searchbar" onkeyup="search_animal()" type="text"
+            name="search" placeholder="Chercher un refuge...">
+            <div class="box_loupe">
+                <img src="images/search.svg" alt="loupe">
+            </div>
+        </div>
+
+        <form class="recherche" action="">
+            <input id="searchbar" type="text"name="search" placeholder="Chercher un refuge...">
+            <input type="image" name="submit" class="box_loupe" src="images/search.svg" alt="loupe">
+        </form>
+
+
+    </main>
+
+
+    <footer>
+        <div class="boutonFoot juridique">
+            <a href="#">Cookies</a>
+            <a href="#">Plan du site</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+        
+        <div class="boutonFoot reseaux">
+            <div>Nos réseaux</div>
+            <section class="iconeReseaux">
+                <img src="images/facebook.svg" alt="logo_facebook"/>
+                <img src="images/linkedin.svg" alt="logo_linkedin"/>
+                <img src="images/x.svg" alt="logo_x"/>
+                <img src="images/youtube.svg" alt="logo_youtube"/>
+                <img src="images/instagram.svg" alt="logo_instagram"/>
+            </section>
+        </div>
+        <img src="images/logoFooter.svg" alt="logo_spa"/>
+    </footer>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="scriptes/scripte.js"></script>
+</body>
+</html>

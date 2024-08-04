@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nvp2seg.css">
+    <title>SPA_acceuil</title>
+</head>
+<body >
+    <header>
+        <img class="logoSite" src="images/logoVersion2.svg" alt="logo_spa" />
+        <div class="boutonMenu">
+            <a href="#">Adopter</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Nos Refuges</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Nos Articles</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Tu préfère</a>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Favorie</a>
+            <img class="Mcoeur" src="images/coeur.svg" alt="icone_coeur"/>
+            <div class="souligne"></div>
+        </div>
+        <div class="boutonMenu">
+            <a href="#">Comment Aider ?</a>
+            <div class="souligne"></div>
+        </div>
+        <img class="icone_profil" src="images/profil.svg" alt="icone_profil"/>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="option_connexion">
+            <div class="option1"><a href="">Se connecter</a></div>
+            <div></div>
+            <div class="option2"><a href="">Créer un compte</a></div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="card modif_compte">
+            <h1>Connexion</h1>
+            <form method="post" action="#">
+                <div class="message"></div>
+                <div class="form_elt">
+                    <label>
+                        <input type="text" class="texte" name="nom" placeholder="Nom" value="">
+                    </label>
+                </div>
+                <div class="form_elt">
+                    <label>
+                        <input type="text" class="texte" name="prenom" placeholder="Prénom" value="">
+                    </label>
+                </div>
+                <div class="form_elt">
+                    <label>
+                        <input type="password" class="texte" name="mdp" placeholder="Mot de passe" value="">
+                    </label>
+                </div>
+                <input class="boutton_connexion B_rencontre" type="submit" class="valid" name="ok" value="Connexion">
+            </form>
+            <a href="index.php?action=creer_compte">Je n’ai pas de compte !</a>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="boutonFoot juridique">
+            <a href="#">Cookies</a>
+            <a href="#">Plan du site</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+        
+        <div class="boutonFoot reseaux">
+            <div>Nos réseaux</div>
+            <section class="iconeReseaux">
+                <img src="images/facebook.svg" alt="logo_facebook"/>
+                <img src="images/linkedin.svg" alt="logo_linkedin"/>
+                <img src="images/x.svg" alt="logo_x"/>
+                <img src="images/youtube.svg" alt="logo_youtube"/>
+                <img src="images/instagram.svg" alt="logo_instagram"/>
+            </section>
+        </div>
+        <img src="images/logoFooter.svg" alt="logo_spa"/>
+    </footer>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="scriptes/scripte.js"></script>
+</body>
+</html>
